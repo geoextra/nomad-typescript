@@ -37,7 +37,7 @@ Below code snippet shows exemplary usage of the configuration and the API based
 on the typical `PetStore` example used for OpenAPI.
 
 ```
-import * as your_api from 'nomad-fetch'
+import * as your_api from 'nomad-typescript'
 
 // Covers all auth methods included in your OpenAPI yaml definition
 const authConfig: your_api.AuthMethodsConfiguration = {

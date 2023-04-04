@@ -1,6 +1,6 @@
 {
 	"name": "nomad-typescript",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"description": "OpenAPI client for Nomad",
 	"author": "OpenAPI-Generator Contributors & Moritz Gehlhaar",
 	"repository": {
@@ -23,7 +23,8 @@
 	"typings": "./dist/index.d.ts",
 	"scripts": {
 		"build": "tsc",
-		"prepare": "npm run build"
+		"prepare": "npm run build",
+		"generate": "openapi-generator-cli generate -i nomad-openapi/v1/openapi.yaml -g typescript -o . --additional-properties=supportsES6=true"
 	},
 	"dependencies": {
 		"whatwg-fetch": "^3.6.2",
