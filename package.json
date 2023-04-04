@@ -1,6 +1,6 @@
 {
 	"name": "nomad-typescript",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "OpenAPI client for Nomad",
 	"author": "OpenAPI-Generator Contributors & Moritz Gehlhaar",
 	"repository": {
