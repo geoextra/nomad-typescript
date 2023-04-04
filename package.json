@@ -1,38 +1,41 @@
 {
-	"name": "nomad-typescript",
-	"version": "0.0.6",
-	"description": "OpenAPI client for Nomad",
-	"author": "OpenAPI-Generator Contributors & Moritz Gehlhaar",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/geoextra/nomad-typescript.git"
-	},
-	"keywords": [
-		"fetch",
-		"typescript",
-		"openapi-client",
-		"openapi-generator"
-	],
-	"license": "MIT",
-	"main": "./dist/index.js",
-	"type": "module",
-	"module": "./dist/index.js",
-	"exports": {
-		".": "./dist/index.js"
-	},
-	"typings": "./dist/index.d.ts",
-	"scripts": {
-		"build": "tsc",
-		"prepare": "npm run build",
-		"generate": "openapi-generator-cli generate -i nomad-openapi/v1/openapi.yaml -g typescript -o . --additional-properties=supportsES6=true"
-	},
-	"dependencies": {
-		"whatwg-fetch": "^3.6.2",
-		"es6-promise": "^4.2.8",
-		"url-parse": "^1.5.10"
-	},
-	"devDependencies": {
-		"typescript": "^5.0",
-		"@types/url-parse": "1.4.8"
-	}
+  "name": "nomad-typescript",
+  "version": "0.1.0",
+  "description": "OpenAPI client for Nomad",
+  "author": "OpenAPI-Generator Contributors & Moritz Gehlhaar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoextra/nomad-typescript.git"
+  },
+  "keywords": [
+    "fetch",
+    "typescript",
+    "openapi-client",
+    "openapi-generator"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "type": "module",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "generate": "openapi-generator-cli generate -i nomad-openapi/v1/openapi.yaml -g typescript -o . --additional-properties='npmName=nomad-typescript,supportsES6=true,platform=node'"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "@types/node-fetch": "^2.5.7",
+    "@types/node": "*",
+    "form-data": "^2.5.0",
+    "es6-promise": "^4.2.4",
+    "url-parse": "^1.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.0",
+    "@types/url-parse": "1.4.4"
+  }
 }
